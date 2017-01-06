@@ -1,0 +1,12 @@
+// extends the base layout (like all other layouts)
+extends _base
+
+//- includes modules, components and helpers
+include ../3-components/hello
+
+//- content
+
+block main
+
+  block page
+  +hello('world')

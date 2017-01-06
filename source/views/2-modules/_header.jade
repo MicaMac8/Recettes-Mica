@@ -1,0 +1,6 @@
+mixin news(object, pagination)
+    each article in object
+        h3=__(News)
+        +article-excerpt(article)
+    if pagination
+        +pagination
